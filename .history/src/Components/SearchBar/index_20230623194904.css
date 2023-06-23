@@ -4,6 +4,8 @@
   font-size: 1.5rem;
   padding: .3rem .8rem;
   border-color: aliceblue;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1150px) {

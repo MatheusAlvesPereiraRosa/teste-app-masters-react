@@ -42,7 +42,7 @@ function Home() {
 
   const filteredData = searchValue
     ? fullData.filter((data) => {
-        return data.title.toLowerCase().includes(searchValue.toLowerCase());
+        return data.API.toLowerCase().includes(searchValue.toLowerCase());
       })
     : data;
 
@@ -85,10 +85,13 @@ function Home() {
 
       {isLoading && <Loading />}
 
-      {filteredData.length > 0 && <GameList data={filteredData} />}
+      {filteredData.length > 0 && <GameList data={data} />}
 
       {filteredData.length === 0 && (
-        <p className="no-result">Sem resultados para a pesquisa</p>
+        <p className="no-result">
+          Sem resultados para a pesquisa
+          <img src={Cruz} className="cross" alt="" />
+        </p>
       )}
 
       {!searchValue && !isLoading && (
