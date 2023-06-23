@@ -6,12 +6,9 @@ import GameList from "../../Components/GameList";
 
 function Home() {
   const [data, setData] = useState({});
-  const [fullData, setFullData] = useState({});
-  const [page, setPage] = useState(0);
-  const [searchValue, setSearchValue] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
 
-  // constantes
+
+  //constantes
   const DATA_PER_PAGE = 15;
   const NO_MORE_DATA = page + DATA_PER_PAGE >= fullData.length;
 
