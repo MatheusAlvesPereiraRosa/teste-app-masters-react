@@ -8,6 +8,11 @@ body {
   background-color: #dedede;
 }
 
+.container {
+  margin-inline: 4rem;
+  margin-block: 4rem; 
+}
+
 body::-webkit-scrollbar {
   width: .95rem;               
 }
