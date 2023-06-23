@@ -1,11 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-import "./index.css";
-import { Button } from "../../Components/Button";
+import "./Index.css";
 import GameList from "../../Components/GameList";
 import { Loading } from "../../Components/Loading";
-import { SearchBar } from "../../Components/SearchBar";
 
 function Home() {
   const [data, setData] = useState({});
@@ -27,8 +25,8 @@ function Home() {
         },
       })
       .then((response) => {
-        setData(response.data.slice(page, DATA_PER_PAGE));
-        setFullData(response.data);
+        setData(response.data.entries.slice(page, DATA_PER_PAGE));
+        setFullData(response.data.entries);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -42,7 +40,7 @@ function Home() {
 
   const filteredData = searchValue
     ? fullData.filter((data) => {
-        return data.title.toLowerCase().includes(searchValue.toLowerCase());
+        return data.API.toLowerCase().includes(searchValue.toLowerCase());
       })
     : data;
 
@@ -85,11 +83,7 @@ function Home() {
 
       {isLoading && <Loading />}
 
-      {filteredData.length > 0 && <GameList data={filteredData} />}
-
-      {filteredData.length === 0 && (
-        <p className="no-result">Sem resultados para a pesquisa</p>
-      )}
+      {filteredData.length > 0 && <GameList data={data} />}
 
       {!searchValue && !isLoading && (
         <Button onClick={loadMoreData} disabled={NO_MORE_DATA} />

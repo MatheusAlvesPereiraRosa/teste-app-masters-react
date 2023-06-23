@@ -3,8 +3,7 @@
   margin-block: 4rem; 
 }
 
-.search-container {
+.searchContainer {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
 }

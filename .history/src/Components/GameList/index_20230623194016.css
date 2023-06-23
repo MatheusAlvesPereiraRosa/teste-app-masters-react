@@ -1,0 +1,5 @@
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 3rem;
+}
