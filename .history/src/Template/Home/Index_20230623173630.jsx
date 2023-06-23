@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 import "./Index.css";
-import GameList from "../../Components/GameList";
+import { Gamelist } from "../../Components/GameList";
 
 function Home() {
   const [data, setData] = useState({});

@@ -1,0 +1,31 @@
+.card-item > img {
+  border-radius: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.card-item {
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 0px -1px rgba(212, 211, 211, 0.86);
+  -moz-box-shadow: 10px 10px 0px -1px rgba(115,115,115,0.86);
+  box-shadow: 10px 10px 0px -1px rgba(115,115,115,0.86);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.text-container {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.text-container_little {
+  margin-top: 0.2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.card-item:hover {
+  transform: scale(1.05);
+}

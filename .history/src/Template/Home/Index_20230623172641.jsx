@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 import "./Index.css";
-import GameList from "../../Components/GameList";
 
 function Home() {
   const [data, setData] = useState({});
@@ -29,11 +28,7 @@ function Home() {
 
   console.log(data);
 
-  return (
-    <section className="container">
-      <GameList data={data} />
-    </section>
-  );
+  return <section className="container" />;
 }
 
 export default Home;
