@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import "./index.css";
 import { Button } from "../../Components/Button";
-import { GameList } from "../../Components/GameList";
+import GameList from "../../Components/GameList";
 import { Loading } from "../../Components/Loading";
 import { SearchBar } from "../../Components/SearchBar";
 

@@ -1,7 +1,7 @@
 .btn-load {
   background-color: #ff901b;
   width: 100%;
-  color: #ff321a;
+  color: aliceblue;
   border: none;
   padding: 15px 30px;
   cursor: pointer;
@@ -9,8 +9,8 @@
 }
 
 .btn-load:hover {
-  background-color: #ff321a;
-  color: #ff901b;
+  background-color: #ff901b;
+  color: #ff321a;
   transition: .5s;
 }
 

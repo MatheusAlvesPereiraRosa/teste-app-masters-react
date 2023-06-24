@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(3 7 18);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 59%, rgba(255,21,0,1) 99%)
 }
 
 body::-webkit-scrollbar {
@@ -13,12 +13,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(3 7 18);        
+  background: white;        
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ff321a;           
-  border: 3px solid rgb(3 7 18);
+  background-color: #6E8B24;           
+  border: 3px solid white;
   border-radius: 20px;
 }
 
@@ -27,9 +27,4 @@ body::-webkit-scrollbar-thumb {
     margin-inline: 3rem;
     margin-block: 3rem; 
   }
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  color: rgb(170 166 195);
-  font-family: 'Merriweather Sans', sans-serif;
 }

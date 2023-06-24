@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-import { GameItem } from "../GameItem/index";
+import GameItem from "../GameItem/index";
 
 export const GameList = ({ data }) => {
   return (

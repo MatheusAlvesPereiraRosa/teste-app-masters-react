@@ -6,9 +6,9 @@
 .card-item {
   border-radius: 10px;
   background-color: rgb(21 16 48);
-  -webkit-box-shadow: 10px 10px 5px -1px #ff901b;
-  -moz-box-shadow: 10px 10px 5px -1px #ff901b;
-  box-shadow: 10px 10px 5px -1px #ff901b;
+  -webkit-box-shadow: 10px 10px 0px -1px #ff901b);
+  -moz-box-shadow: 10px 10px 0px -1px #ff901b;
+  box-shadow: 10px 10px 0px -1px #ff901b;
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -17,6 +17,10 @@
 .text-container {
   margin-block: 1rem;
   margin-inline: 0.7rem;
+}
+
+.text-container > h1 > h3 > p {
+  color: rgb(70 166 195)
 }
 
 .text-container_little {

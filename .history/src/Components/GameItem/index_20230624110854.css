@@ -5,10 +5,10 @@
 
 .card-item {
   border-radius: 10px;
-  background-color: rgb(21 16 48);
-  -webkit-box-shadow: 10px 10px 5px -1px #ff901b;
-  -moz-box-shadow: 10px 10px 5px -1px #ff901b;
-  box-shadow: 10px 10px 5px -1px #ff901b;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 0px -1px rgba(212, 211, 211, 0.86);
+  -moz-box-shadow: 10px 10px 0px -1px rgba(115,115,115,0.86);
+  box-shadow: 10px 10px 0px -1px rgba(115,115,115,0.86);
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -47,10 +47,10 @@
   }
 
   .text-container > h3 {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
   }
 
   .text-container > p {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
   }
 }

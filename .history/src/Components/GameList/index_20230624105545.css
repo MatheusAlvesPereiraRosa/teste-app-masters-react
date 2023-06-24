@@ -1,0 +1,6 @@
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
