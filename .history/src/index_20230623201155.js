@@ -5,4 +5,8 @@ import "./index.css";
 import Home from "./Template/Home/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Home />);
+root.render(
+  <React.StrictMode>
+    <Home />
+  </React.StrictMode>
+);

@@ -91,11 +91,8 @@ function Home() {
     return data;
   }
 
-  function validateError(numCode) {
-    const code = numCode.toString();
-    const match = /[5][0][0, 2, 3, 4, 7, 8, 9]/;
-
-    if (match.test(code)) {
+  function validateError(code) {
+    if (code === /[5][0][0, 2, 3, 4, 7, 8, 9]/) {
       return true;
     }
 
@@ -150,12 +147,9 @@ function Home() {
         </p>
       )}
 
-      {!searchValue &&
-        !isLoading &&
-        statusReq.error === false &&
-        statusReq.timeout === false && (
-          <Button onClick={loadMoreData} disabled={NO_MORE_DATA} />
-        )}
+      {!searchValue && !isLoading && statusReq.error === false && (
+        <Button onClick={loadMoreData} disabled={NO_MORE_DATA} />
+      )}
     </section>
   );
 }
