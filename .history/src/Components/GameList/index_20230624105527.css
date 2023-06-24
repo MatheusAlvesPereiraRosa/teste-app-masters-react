@@ -1,0 +1,25 @@
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(300px, 1fr);
+  gap: 3rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .game-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .game-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .game-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

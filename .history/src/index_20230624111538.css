@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(7,1,107,1) 2%, rgba(5,5,154,1) 60%, rgba(8,1,46,1) 100%);
+}
+
+body::-webkit-scrollbar {
+  width: .95rem;               
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6E8B24;           
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    margin-inline: 3rem;
+    margin-block: 3rem; 
+  }
+}
