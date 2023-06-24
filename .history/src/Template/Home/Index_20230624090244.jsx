@@ -75,7 +75,7 @@ function Home() {
     console.log("executei");
   }, []);
 
-  // funções
+  //funções
 
   function getNextPage(page, DATA_PER_PAGE) {
     const nextPage = page + DATA_PER_PAGE;
@@ -89,17 +89,6 @@ function Home() {
     data.push(...nextData);
 
     return data;
-  }
-
-  function validateError(numCode) {
-    const code = numCode.toString();
-    const match = /[5][0][0, 2, 3, 4, 7, 8, 9]/;
-
-    if (match.test(code)) {
-      return true;
-    }
-
-    return false;
   }
 
   const handleChange = (event) => {
@@ -131,18 +120,22 @@ function Home() {
         <p className="no-result">Sem resultados para a pesquisa</p>
       )}
 
-      {statusReq.error === true && validateError(statusReq.code) && (
-        <p className="no-result">
-          O servidor falhou em responder, tente recarregar a página
-        </p>
-      )}
+      {statusReq.error === true &&
+        statusReq.code === /[5][0][0, 2, 3, 4, 7, 8, 9]/ &&
+        (
+          <p className="no-result">
+            O servidor falhou em responder, tente recarregar a página
+          </p>
+        )}
 
-      {statusReq.error === true && !validateError(statusReq.code) && (
-        <p className="no-result">
-          O servidor não conseguirá responder por agora, tente voltar novamente
-          mais tarde
-        </p>
-      )}
+      {statusReq.error === true &&
+        !statusReq.code !== /[5][0][0, 2, 3, 4, 7, 8, 9]/ &&
+        (
+          <p className="no-result">
+            O servidor não conseguirá responder por agora, tente voltar
+            novamente mais tarde
+          </p>
+        )}
 
       {statusReq.timeout === true && statusReq.code === "Timeout" && (
         <p className="no-result">
@@ -150,12 +143,9 @@ function Home() {
         </p>
       )}
 
-      {!searchValue &&
-        !isLoading &&
-        statusReq.error === false &&
-        statusReq.timeout === false && (
-          <Button onClick={loadMoreData} disabled={NO_MORE_DATA} />
-        )}
+      {!searchValue && !isLoading && statusReq.error === false && (
+        <Button onClick={loadMoreData} disabled={NO_MORE_DATA} />
+      )}
     </section>
   );
 }

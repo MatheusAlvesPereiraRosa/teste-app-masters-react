@@ -93,9 +93,8 @@ function Home() {
 
   function validateError(numCode) {
     const code = numCode.toString();
-    const match = /[5][0][0, 2, 3, 4, 7, 8, 9]/;
 
-    if (match.test(code)) {
+    if (code.test(/[5][0][0, 2, 3, 4, 7, 8, 9]/) {
       return true;
     }
 

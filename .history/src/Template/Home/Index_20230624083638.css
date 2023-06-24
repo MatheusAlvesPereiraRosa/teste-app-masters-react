@@ -7,9 +7,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 3rem;
-}
-
-.search-container > h1 {
   margin-top: 1rem;
+  margin-bottom: 3rem;
 }

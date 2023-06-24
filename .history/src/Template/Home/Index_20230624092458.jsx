@@ -95,7 +95,7 @@ function Home() {
     const code = numCode.toString();
     const match = /[5][0][0, 2, 3, 4, 7, 8, 9]/;
 
-    if (match.test(code)) {
+    if (code.test()) {
       return true;
     }
 
