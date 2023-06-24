@@ -20,11 +20,11 @@
 }
 
 .text-container_description {
-  margin-top: 0.85rem;
+  margin-top: 0.5rem;
 }
 
 .text-container_little {
-  margin-top: 0.55rem;
+  margin-top: 0.2rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;

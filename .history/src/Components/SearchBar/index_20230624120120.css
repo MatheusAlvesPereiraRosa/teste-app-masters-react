@@ -7,12 +7,15 @@
   color: rgb(170 166 195);
   border-color: rgb(21 16 48);
   background-color: rgb(21 16 48);
-  outline: none;
 }
 
 .search-input::placeholder {
   font-family: 'Merriweather Sans', sans-serif;;
   color: rgb(170 166 195);
+}
+
+.search-input:focus-visible {
+  
 }
 
 @media screen and (max-width: 1150px) {

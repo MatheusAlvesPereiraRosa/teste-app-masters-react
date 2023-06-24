@@ -39,9 +39,9 @@ function Home() {
         timeout: 5000,
       })
       .then((response) => {
-        setData(response.data.slice(page, DATA_PER_PAGE));
-        setFullData(response.data);
-        setIsLoading(false);
+        //setData(response.data.slice(page, DATA_PER_PAGE));
+        //setFullData(response.data);
+        //setIsLoading(false);
         console.log(response);
       })
       .catch((error) => {

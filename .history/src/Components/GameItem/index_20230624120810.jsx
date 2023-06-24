@@ -16,9 +16,7 @@ export const GameItem = ({
         <h1>{title}</h1>
         <h3>{genre}</h3>
 
-        <div className="text-container_description">
-          <p>{shortDescription}</p>
-        </div>
+        <p>{shortDescription}</p>
 
         <div className="text-container_little">
           <p>
