@@ -14,6 +14,5 @@ Para rodá-lo basta baixar o projeto em sua máquina, e colocar o comando npm st
 
 ## Link do projeto online
 
-[https://github.com/MatheusAlvesPereiraRosa/teste-app-masters-react](https://teste-app-masters.netlify.app/)https://teste-app-masters.netlify.app/
-
+[https://github.com/MatheusAlvesPereiraRosa/teste-app-masters-react](https://teste-app-masters.netlify.app/)
 
