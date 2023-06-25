@@ -42,6 +42,7 @@ function Home() {
         setData(response.data.slice(page, DATA_PER_PAGE));
         setFullData(response.data);
         setIsLoading(false);
+        console.log(response);
       })
       .catch((error) => {
         if (error.response) {

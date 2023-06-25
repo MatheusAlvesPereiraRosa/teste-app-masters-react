@@ -28,7 +28,7 @@ module.exports = {
   "rules": {
     "camelcase": "off",
     "import/no-unresolved": "error",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/extension" : "off",
     "@typescript-eslint/naming-convention": [
       "error",
       {

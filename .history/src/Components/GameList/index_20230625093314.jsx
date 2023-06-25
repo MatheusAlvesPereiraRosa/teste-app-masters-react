@@ -1,8 +1,8 @@
-import P from "prop-types";
 import React from "react";
 import "./index.css";
+import P from "prop-types";
 
-import { GameItem } from "../GameItem/index.jsx";
+import { GameItem } from "../GameItem/index";
 
 export const GameList = ({ data }) => {
   return (
@@ -31,12 +31,12 @@ GameList.defaultProps = {
 GameList.propTypes = {
   data: P.arrayOf(
     P.shape({
-      title: P.string.isRequired,
-      thumbnail: P.string.isRequired,
-      shortDescription: P.string.isRequired,
-      genre: P.string.isRequired,
-      platform: P.string.isRequired,
-      releaseDate: P.string.isRequired,
+      title,
+      thumbnail,
+      shortDescription,
+      genre,
+      platform,
+      releaseDate,
     })
   ),
 };

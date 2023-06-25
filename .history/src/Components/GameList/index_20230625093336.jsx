@@ -1,8 +1,8 @@
-import P from "prop-types";
 import React from "react";
 import "./index.css";
+import P from "prop-types";
 
-import { GameItem } from "../GameItem/index.jsx";
+import { GameItem } from "../GameItem/index";
 
 export const GameList = ({ data }) => {
   return (

@@ -1,5 +1,4 @@
 import "./index.css";
-import P from "prop-types";
 
 export const SearchBar = ({ searchValue, handleChange }) => (
   <input
@@ -10,8 +9,3 @@ export const SearchBar = ({ searchValue, handleChange }) => (
     onChange={handleChange}
   />
 );
-
-SearchBar.propTypes = {
-  searchValue: P.string.isRequired,
-  handleChange: P.func.isRequired,
-};
