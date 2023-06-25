@@ -36,10 +36,10 @@ export const GameItem = ({
 };
 
 GameItem.propTypes = {
-  title: P.string.isRequired,
-  thumbnail: P.string.isRequired,
-  shortDescription: P.string.isRequired,
-  genre: P.string.isRequired,
-  platform: P.string.isRequired,
-  releaseDate: P.string.isRequired,
+  title: P.string,
+  thumbnail,
+  shortDescription,
+  genre,
+  platform,
+  releaseDate,
 };
